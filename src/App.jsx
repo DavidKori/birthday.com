@@ -33,7 +33,7 @@ const App = () => {
         // limit visible toasts
         limit={3}
       />
-      <Router basename='birthday.com'>
+      <Router basename='/birthday.com/'>
         <Routes>
           <Route path='/' element={<Navigate to="/login" replace/>}/>
           <Route path='/login' element={<LoginForm name={name} setName={setName} />}/>
