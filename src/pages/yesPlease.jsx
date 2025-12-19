@@ -16,19 +16,19 @@ const yesPlease = ({name,background}) => {
         e.preventDefault();
             switch (e.target.alt) {
                 case "loveJar": {
-                    navigate("/jar")
+                    navigate("/birthday.com/jar")
                 };
                 break;
                 case "loveSong": {
-                    navigate("/song")
+                    navigate("/birthday.com/song")
                 };
                 break;
                 case "loveMessage": {
-                    navigate("/message")
+                    navigate("/birthday.com/message")
                 }
                 break;
                 default: {
-                    navigate("/home")
+                    navigate("/birthday.com/home")
                 }
 
             }
