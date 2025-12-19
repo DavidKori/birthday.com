@@ -8,7 +8,7 @@ const yesPlease = ({name,background}) => {
 
     function handleNavigate (e) {
         e.preventDefault();
-            navigate("/birthday.com/home");
+            navigate("/home");
             
 
     }
@@ -16,19 +16,19 @@ const yesPlease = ({name,background}) => {
         e.preventDefault();
             switch (e.target.alt) {
                 case "loveJar": {
-                    navigate("/birthday.com/jar")
+                    navigate("/jar")
                 };
                 break;
                 case "loveSong": {
-                    navigate("/birthday.com/song")
+                    navigate("/song")
                 };
                 break;
                 case "loveMessage": {
-                    navigate("/birthday.com/message")
+                    navigate("/message")
                 }
                 break;
                 default: {
-                    navigate("/birthday.com/home")
+                    navigate("/home")
                 }
 
             }

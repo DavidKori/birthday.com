@@ -33,16 +33,16 @@ const App = () => {
         // limit visible toasts
         limit={3}
       />
-      <Router >
+      <Router basename='birthday.com'>
         <Routes>
-          <Route path='/birthday.com' element={<Navigate to="/birthday.com/login" replace/>}/>
-          <Route path='/birthday.com/login' element={<LoginForm name={name} setName={setName} />}/>
-          <Route path='/birthday.com/home' element={  <Home name={name} background={background[number]} />}/>
-          <Route path='/birthday.com/break'  element={  <NoPleasePage background={background[5]}/>}/>
-          <Route path='/birthday.com/love' element={ <YesPlease name={name} background={background[number]}/>}/>
-          <Route path='/birthday.com/jar' element={  <JarOfLove background={background[number]}/>}/>
-          <Route path='/birthday.com/message' element={ <Message name={name} background={background[number]}/>}/>
-          <Route path='/birthday.com/song' element={ <DedicatedSong background={background[number]}/> }/>
+          <Route path='/' element={<Navigate to="/login" replace/>}/>
+          <Route path='/login' element={<LoginForm name={name} setName={setName} />}/>
+          <Route path='/home' element={  <Home name={name} background={background[number]} />}/>
+          <Route path='/break'  element={  <NoPleasePage background={background[5]}/>}/>
+          <Route path='/love' element={ <YesPlease name={name} background={background[number]}/>}/>
+          <Route path='/jar' element={  <JarOfLove background={background[number]}/>}/>
+          <Route path='/message' element={ <Message name={name} background={background[number]}/>}/>
+          <Route path='/song' element={ <DedicatedSong background={background[number]}/> }/>
         </Routes>
         </Router>
         </div>

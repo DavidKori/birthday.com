@@ -12,10 +12,10 @@ const Home = ({name,background}) => {
     function handleClick (e) {
         e.preventDefault();
         if (e.target.value === "yes") {
-          navigate("/birthday.com/love")
+          navigate("/love")
         }
         if(e.target.value === "no") {
-          navigate("/birthday.com/break")
+          navigate("/break")
           
         }
     }

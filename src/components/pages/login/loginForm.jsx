@@ -53,7 +53,7 @@ const LoginForm = ({name, setName }) => {
     } catch (err) {
       // intentionally silent
     }
-      navigate('/birthday.com/home');
+      navigate('/home');
     }
   
   };

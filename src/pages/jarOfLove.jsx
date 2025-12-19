@@ -10,7 +10,7 @@ const JarOfLove = ({background}) => {
 
     function handleClick (e) {
         e.preventDefault();
-        navigate("/birthday.com/love");
+        navigate("/love");
 
     }
   return (
