@@ -1,0 +1,27 @@
+
+.gifts {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+.gifts > div {
+    background-color: rgba(229, 39, 39, 0.215);
+    border-radius: 20px;
+    transition: all .5s ease;
+    padding: 3px;
+        filter: drop-shadow(0 0 2em #61dafbd3);
+    border-top:  5px solid rgb(255, 255, 255);
+}
+.gifts > div:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    
+}
+
+.gifts > div > img {
+    width: 20vw;
+    height: 20vw;
+    opacity: .8;
+}

@@ -1,0 +1,28 @@
+p, i{
+    position: relative;
+    z-index: 1;
+    color: aliceblue;
+    text-align: center;
+}
+.greetings {
+    font-size: clamp(1rem, 4rem + 1px , 6rem);
+    display: block;
+}
+.birthdayLine {
+    font-family:cursive ;
+    font-size: clamp(1rem, 4rem , 6rem);
+    margin: 0px 0px 20px;
+
+}
+.birthdayQuiz {
+    font-family:cursive ;
+    font-size: 1rem;
+
+}
+.homeButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items:stretch ;
+    width: 100%;
+}

@@ -1,0 +1,27 @@
+.promise{
+font-size:  clamp(1rem, 4rem , 6rem);
+font-style: italic;
+font-weight: bold;
+margin: 0px;
+color: rgb(255, 253, 253);
+}
+button {
+    margin-bottom: 50px ;
+}
+.cryingEmoji > video {
+    width: 25vw !important;
+    height: 25vw !important;
+    border-radius: 50% !important;
+      overflow: hidden;
+      opacity: .8;
+
+}
+.cryingEmoji > video > source {
+        width: 25vw !important;
+    height: 25vw !important;
+    border-radius: 50% !important;
+      overflow: hidden;
+}
+.cryingEmoji {
+    overflow: hidden;
+}

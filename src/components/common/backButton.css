@@ -1,0 +1,28 @@
+.backButton {
+    background-color: hsl(0, 0%, 95%);
+    width: clamp(5rem,10rem,15rem);
+    height: 40px;
+    margin: 10px;
+    border-radius: 20px;
+    color: #DC0000;
+    font-size: 1.5rem;
+    overflow-x: hidden;
+    transition: all .5s ease;
+    display: flex;
+    align-items: center;     /* vertical center */
+    justify-content:center; 
+    outline: none;
+    border: none;
+  
+    
+    
+}
+
+.backButton:hover {
+    transform: scale(1.05);
+    background-color: hsl(0, 0%, 85%);
+}
+
+.backButton > svg {
+    margin-right: 5px;
+}

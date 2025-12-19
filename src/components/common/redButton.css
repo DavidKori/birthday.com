@@ -1,0 +1,22 @@
+.redButton {
+    background-color: #DC0000;
+    width: clamp(10rem,15rem,20rem);
+    height: 40px;
+    margin: 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.5rem;
+    overflow-x: hidden;
+    transition: all .5s ease;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    outline: none;
+    border: none;
+}
+
+.redButton:hover {
+    transform: scale(1.05);
+    background-color: hsl(0, 100%, 33%);
+}

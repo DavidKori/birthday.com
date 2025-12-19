@@ -1,0 +1,66 @@
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+  
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+}
+.section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px;
+    margin: 0px;
+    
+
+}
+.center > img {
+   
+    width: 25vw;
+    background: rgba(255, 255, 255, 0.135);
+    filter: drop-shadow(0 0 2rem rgb(81, 232, 67));
+    box-shadow: 2px 2px 4px blueviolet,-1px -1px 3px greenyellow;
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    border-top: 5px solid greenyellow;
+    transition: all .5s ease;
+    
+
+
+}
+.center > img:hover {
+    transform: scale(1.03);
+}
+
+.center {
+     display: flex;
+    margin: 0px;
+    justify-content: center;
+}
+.left , .right {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+
+
+    
+
+}
+.tworem{
+    font-size: 2rem !important;
+
+}
+.left {
+    width: 100%;
+}
+.right {
+    
+    width: 100%;
+}
+
+button {
+ z-index: 100;
+}
