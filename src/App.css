@@ -20,6 +20,7 @@
     }
     .redButton {
       max-width: 200px;
+      justify-self: center;
     }
     .birthdayLine {
       font-size: 3rem;
@@ -97,6 +98,7 @@
      .fullPage {
       height: 100vw;
       overflow: hidden;
+      flex-direction: column !important;
      }
      body {
       overflow: hidden;
@@ -125,5 +127,22 @@
       justify-self: center;
      }
 
+    form {
+      width: 85%;
+    }
+    input {
+      width: 90%;
+  
+      margin: auto;
+    }
+    label {
+           
+       width: 90%;
     
+      margin: auto;
+    }
+    center > div > button {
+      width: 50vw !important;
+      font-size: 1.2rem !important;
+}
 }
