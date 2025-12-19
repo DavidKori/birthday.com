@@ -15,8 +15,8 @@ const Home = ({name,background}) => {
           navigate("/love")
         }
         if(e.target.value === "no") {
-          navigate("/break")
-          console.log(e.target.value)
+          navigate("/birthday.com/break")
+          
         }
     }
   return (

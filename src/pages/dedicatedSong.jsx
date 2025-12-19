@@ -10,7 +10,7 @@ const DedicatedSong = ({background}) => {
   const navigate = useNavigate();
   function handleClick (e) {
     e.preventDefault();
-    navigate("/love");
+    navigate("/birthday.com/love");
   }
   return (
     <div className='dedicatedSong'>

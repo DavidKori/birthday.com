@@ -8,7 +8,7 @@ const yesPlease = ({name,background}) => {
 
     function handleNavigate (e) {
         e.preventDefault();
-            navigate("/home");
+            navigate("/birthday.com/home");
             
 
     }
