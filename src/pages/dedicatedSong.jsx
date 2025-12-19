@@ -20,12 +20,12 @@ const DedicatedSong = ({background}) => {
         type='video/mp4'/>
         <p className='subTitle'>this song reminds me of you </p>
         <iframe 
-        width="560" 
-        height="315" 
+        // width="50vw" 
+        // height="50vw" 
         src="https://www.youtube.com/embed/LRdmZEdZ67g?si=IAQlAJQNwBNWaASl" 
         title="YouTube video player" 
-        frameBorder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" 
+        frameborder="0" 
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; web-share" 
         referrerPolicy="strict-origin-when-cross-origin" 
         allowFullScreen></iframe>
         <div className='backFromSong'>

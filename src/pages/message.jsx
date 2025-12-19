@@ -25,7 +25,7 @@ const Message = ({name, background}) => {
         </div>
 
          <div className='messageBody alternative'>
-             <h2 className="subTitle"> Happy Birthday <br/>💖 {name} baiby </h2>
+             <h2 className="subTitle"> Happy Birthday <br/>💖 <span className="nameColor">{name}</span>  baiby </h2>
              <p className="message1">
               Happy Birthday, my love. 💖
               You make my world softer, brighter, 
@@ -47,7 +47,7 @@ const Message = ({name, background}) => {
               too 🎂😉
              </p>
             <div className="roseFlower">
-                <center><h3 className="subTitle">I LOVE YOU <br /> TO; {name}</h3></center>
+                <center><h3 className="subTitle">I LOVE YOU <br /> TO; <span className="nameColor">{name}</span></h3></center>
 
                 <img src="https://res.cloudinary.com/dxritu7i3/image/upload/v1766131976/512_qhxqhr.gif" alt="" />
 

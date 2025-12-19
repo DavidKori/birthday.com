@@ -42,7 +42,7 @@ const yesPlease = ({name,background}) => {
         Your browser doesn't support these type of videos
       </video>
       <div className="overLay"></div>
-        <p className="title ceaveat">dedicated to you - {name} ✨ my love!  </p>
+        <p className="title ceaveat">dedicated to you - <span className='nameColor'>{name}</span>  ✨ my love!  </p>
         <p className="subTitle"> click on any to open 🎉</p>
         <div className="gifts">
             <div className="gift1" onClick={handleClick}>

@@ -2,3 +2,128 @@
   font-size: 300px;
   color: black;
 } */
+
+@media only screen and (max-width:740px) {
+    .backFromSong {
+      margin: 20vw auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .homeButtons {
+      flex-direction: column;
+
+    }
+    .homeButtons > div {
+      display: flex;
+      justify-content: center;
+    }
+    .redButton {
+      max-width: 200px;
+    }
+    .birthdayLine {
+      font-size: 3rem;
+    }
+    .title {
+      font-size: 2.5rem !important;
+    }
+    .subTitle {
+      font-size: 1.5rem;
+      margin-top: 0px;
+    }
+    .promise {
+      font-size: 3rem;
+       background: linear-gradient(90deg, #10b2db, #5f0fc7, #e83838);
+  -webkit-background-clip: text; /* Chrome, Safari */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+    }
+    .cryingEmoji {
+      min-width: 100px;
+      min-height: 100px;
+    }
+    .cryingEmoji > video {
+      min-height: 150px;
+      min-width: 150px;
+    }
+
+    .section {
+      flex-direction: column;
+      overflow-y: scroll;
+      height: 60vh;
+        position: relative;
+      margin-top: 10px;
+      
+    }
+    .left {
+      position: relative;
+      top: 0px;
+   
+    }
+    .right {
+      position: relative;
+      top: 0px;
+    }
+    .loveReasonContainer {
+      height: fit-content;
+      padding: 2px;
+      background-color: rgba(255, 255, 255, 0) !important;
+      border: none;
+    }
+    .loveReason {
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+      font-size: 1.7rem;
+      background-color: #e8bcd849;
+    }
+     .center > img {
+      width: 50vw;
+      background-color: #f7747415;
+      box-shadow: none;
+      height: 40vw;
+      max-height: 200px;
+      position: absolute;
+      bottom: -25vw;
+      backdrop-filter: blur(2px);
+
+     }
+     .mainMessage {
+      flex-direction: column;
+      overflow-y: scroll;
+      height:100%;
+      width: 100vw;
+     }
+     .fullPage {
+      height: 100vw;
+      overflow: hidden;
+     }
+     body {
+      overflow: hidden;
+      z-index: -2;
+     }
+     .titleDiv > h1 {
+      font-size: 2rem !important;
+     }
+     .leftMessage {
+      width: 100vw;
+     }
+     .message1 , .message2 {
+      font-size: 1.5rem;
+
+     }
+
+     .messageBody > h2 {
+      color: #10dbc3;
+      margin: auto;
+      left: auto;
+      right: auto;
+      justify-self: center;
+     }
+     .pushRight {
+      margin: auto;
+      justify-self: center;
+     }
+
+    
+}

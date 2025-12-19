@@ -82,5 +82,9 @@ button {
   font-style: normal;
 }
 .nameColor {
-  color: linear-gradient(blueviolet,greenyellow);
+  background: linear-gradient(90deg,rgb(43, 192, 226),rgb(99, 4, 193));
+  -webkit-background-clip: text; /* Chrome, Safari */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+

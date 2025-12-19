@@ -19,4 +19,8 @@ iframe {
     margin: 30px auto 20px;
     box-shadow: 2px 2px 4px red, -2px -2px 4px white;
     border-radius: 10px;
+    width: clamp(220px,60vw,600px);
+    height: clamp(130px,35vw,300px);
+    
 }
+
