@@ -8,6 +8,8 @@ import JarOfLove from './pages/jarOfLove';
 import Message from './pages/message';
 import DedicatedSong from './pages/dedicatedSong';
 import { useState } from "react";
+import { Toaster } from 'react-hot-toast';
+
 
 import './App.css'
 
@@ -23,7 +25,14 @@ const App = () => {
   const number = 6;
   const [name, setName] = useState("");
   return (
-        
+        <div>
+          <Toaster
+        toastOptions={{
+          duration: 3000,
+        }}
+        // limit visible toasts
+        limit={3}
+      />
       <Router>
         <Routes>
           <Route path='/birthday.com' element={<Navigate to="/birthday.com/login" replace/>}/>
@@ -36,6 +45,7 @@ const App = () => {
           <Route path='/birthday.com/song' element={ <DedicatedSong background={background[number]}/> }/>
         </Routes>
         </Router>
+        </div>
   )
     
  

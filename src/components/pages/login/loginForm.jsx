@@ -1,22 +1,44 @@
-import React, { useState } from 'react';
+import React, { useState,useRef } from 'react';
 import './loginForm.css';
 import RedButton from '../../common/redButton';
 import { useNavigate } from 'react-router';
+import toast from 'react-hot-toast';
+
 
 
 const LoginForm = ({name, setName }) => {
   const navigate = useNavigate();
   setName(name);
+    // Rate limiting variables
+  const toastTimes = useRef([]);
+  const MAX_TOASTS = 3; // Maximum 3 toasts
+  const TIME_WINDOW = 5000; // In 5 seconds window
   const handleClick = (e) => {
     e.preventDefault();
     
+    // Rate limiting check
+    const now = Date.now();
+    
+    // Remove timestamps older than TIME_WINDOW
+    toastTimes.current = toastTimes.current.filter(
+      time => now - time < TIME_WINDOW
+    );
+    
+    // Check if toast limit exceeded
+    if (toastTimes.current.length >= MAX_TOASTS) {
+      toast.error(`Too many attempts! Please wait ${TIME_WINDOW/2000} seconds`);
+      return;
+    }
+    
+    // Record this attempt
+    toastTimes.current.push(now);
     
     // Simple validation
     if (!name) {
-      alert('Invalid credentials');
+      toast.error('Enter your name!');
     } else {
-    navigate('/birthday.com/home');
-
+      toast.success('Welcome to My Heart 🎈❤!');
+      navigate('/birthday.com/home');
     }
   };
   return (
