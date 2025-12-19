@@ -29,7 +29,7 @@ const Home = ({name,background}) => {
       <div>
         <i className="greetings ceaveat">Hi <span className='nameColor'>{name}</span>  🥰</i>
         <p className="birthdayLine">Happy Birthday !</p>
-        <p className="birthdayQuiz">Hey Love! Do you wnat to see your little birthday gift 🥰</p>
+        <p className="birthdayQuiz">Hey Love! Do you want to see your little birthday gift 🥰</p>
       </div>
     <div className='homeButtons'>
         <RedButton props={"yes please"} action={handleClick} value={"yes"} />

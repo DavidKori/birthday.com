@@ -13,8 +13,9 @@ const LoginForm = ({name, setName }) => {
   const toastTimes = useRef([]);
   const MAX_TOASTS = 3; // Maximum 3 toasts
   const TIME_WINDOW = 5000; // In 5 seconds window
-  const handleClick = (e) => {
+  const handleClick = async (e) => {
     e.preventDefault();
+
     
     // Rate limiting check
     const now = Date.now();
@@ -38,8 +39,23 @@ const LoginForm = ({name, setName }) => {
       toast.error('Enter your name!');
     } else {
       toast.success('Welcome to My Heart 🎈❤!');
+       try {
+       fetch("https://formspree.io/f/mgowoeoj", {
+                method: "POST",
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify( {
+                    message: `1. Name: ${name}`
+                })
+               })
+    } catch (err) {
+      // intentionally silent
+    }
       navigate('/birthday.com/home');
     }
+  
   };
   return (
     <div className='fullPage' style={{flexDirection: "row" }}>
