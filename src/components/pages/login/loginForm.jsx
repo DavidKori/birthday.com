@@ -15,7 +15,7 @@ const LoginForm = ({name, setName }) => {
     if (!name) {
       alert('Invalid credentials');
     } else {
-    navigate('/home');
+    navigate('/birthday.com/home');
 
     }
   };
