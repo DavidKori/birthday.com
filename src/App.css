@@ -145,4 +145,10 @@
       width: 50vw !important;
       font-size: 1.2rem !important;
 }
+.video-wrapper >.video {
+
+    width: clamp(220px,50vw,600px) ;
+    height: clamp(130px,28vw,300px);
+
+}
 }
