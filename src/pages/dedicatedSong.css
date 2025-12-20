@@ -11,7 +11,7 @@
     width: 80%;
     display: block;
     margin-left: auto;
-    margin-top: 30px;
+    margin-top: 0px;
 
 }
 /* iframe {
@@ -29,7 +29,7 @@
   position: relative;
   width: 100%;
   max-width: 800px;
-  margin: auto;
+  margin:10vh auto 0px;
   cursor: pointer;
 
 
@@ -38,7 +38,7 @@
 .video-wrapper >.video {
 
   display: block;
-        margin: 30px auto 20px;
+        margin: 50px auto 20px;
     box-shadow: 2px 2px 4px red, -2px -2px 4px white;
     border-radius: 10px;
     width: clamp(220px,41vw,600px);
