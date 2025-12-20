@@ -14,13 +14,56 @@
     margin-top: 30px;
 
 }
-iframe {
+/* iframe {
     display: block;
     margin: 30px auto 20px;
     box-shadow: 2px 2px 4px red, -2px -2px 4px white;
     border-radius: 10px;
-    width: clamp(220px,60vw,600px);
+    width: clamp(220px,40vw,600px);
     height: clamp(130px,35vw,300px);
+    padding: 0px;
     
+} */
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  cursor: pointer;
+
+
 }
+
+.video-wrapper >.video {
+
+  display: block;
+        margin: 30px auto 20px;
+    box-shadow: 2px 2px 4px red, -2px -2px 4px white;
+    border-radius: 10px;
+    width: clamp(220px,50vw,600px);
+    height: clamp(130px,28vw,300px);
+    padding: 0px;
+}
+
+.play-button {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* click passes to wrapper */
+}
+.play-button {
+  transition: opacity 0.3s ease;
+}
+
 

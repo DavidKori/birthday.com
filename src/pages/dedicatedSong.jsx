@@ -3,6 +3,7 @@ import './dedicatedSong.css';
 import MainBackground from '../components/common/mainBackground';
 import BackButton from '../components/common/backButton';
 import { useNavigate } from 'react-router';
+import { useRef, useState } from "react";
 
 
 
@@ -12,6 +13,21 @@ const DedicatedSong = ({background}) => {
     e.preventDefault();
     navigate("/love");
   }
+    const videoRef = useRef(null);
+  const [playing, setPlaying] = useState(true);
+
+  const togglePlay = () => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    if (video.paused) {
+      video.play();
+      setPlaying(true);
+    } else {
+      video.pause();
+      setPlaying(false);
+    }
+  };
   return (
     <div className='dedicatedSong'>
         <MainBackground 
@@ -19,15 +35,40 @@ const DedicatedSong = ({background}) => {
         src={background}
         type='video/mp4'/>
         <p className='subTitle'>this song reminds me of you </p>
-        <iframe 
+
+
+            <div className="video-wrapper" >
+      <video
+        ref={videoRef}
+        src="https://res.cloudinary.com/dxritu7i3/video/upload/v1766186702/Jay_Melody_Nakupenda__Lyric_video__1080p_nocerg.mp4"
+        autoPlay
+       
+        loop
+        playsInline
+        className="video"
+        onClick={togglePlay}
+        
+      />
+
+      {!playing && (
+        <button className="play-button">
+          ▶
+        </button>
+      )}
+        </div>
+
+
+        {/* <iframe 
         // width="50vw" 
         // height="50vw" 
-        src="https://www.youtube.com/embed/LRdmZEdZ67g?si=IAQlAJQNwBNWaASl" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; web-share" 
+        src="https://res.cloudinary.com/dxritu7i3/video/upload/v1766186702/Jay_Melody_Nakupenda__Lyric_video__1080p_nocerg.mp4" 
+        title="Lovers video player" 
+          width="100%"
+         height="100%"
+        allow="accelerometer; clipboard-write; autoplay; encrypted-media; gyroscope; web-share" 
         referrerPolicy="strict-origin-when-cross-origin" 
-        allowFullScreen></iframe>
+        allowFullScreen
+        style={{ border: "none" }}></iframe> */}
         <div className='backFromSong'>
           <BackButton props="back" action={handleClick} />
         </div>
