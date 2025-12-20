@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router';
+import {Routes, Route, Navigate } from 'react-router';
 import LoginForm from './components/pages/login/loginForm';
 import Home from './pages/home';
 import NoPleasePage from './pages/noThanks';
@@ -33,7 +33,7 @@ const App = () => {
         // limit visible toasts
         limit={3}
       />
-      <Router basename='/birthday.com/'>
+    
         <Routes>
           <Route path='/' element={<Navigate to="/login" replace/>}/>
           <Route path='/login' element={<LoginForm name={name} setName={setName} />}/>
@@ -44,7 +44,7 @@ const App = () => {
           <Route path='/message' element={ <Message name={name} background={background[number]}/>}/>
           <Route path='/song' element={ <DedicatedSong background={background[number]}/> }/>
         </Routes>
-        </Router>
+ 
         </div>
   )
     
